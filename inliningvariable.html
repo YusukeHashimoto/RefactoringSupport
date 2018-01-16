@@ -1,0 +1,13 @@
+<html>
+  <title>変数のインライン化</title>
+  1度しか参照されない変数は、変数にせずにインライン化しましょう。
+
+  public void badMethod() {
+    int x = 3 * 12;
+    System.out.prinln(x);
+  }
+
+  public void goodMethod() {
+    System.out.println(3 * 12);
+  }
+</html>
